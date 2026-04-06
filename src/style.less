@@ -1,7 +1,7 @@
 :root {
     color-scheme: light dark;
     
-    --background: light-dark(#FAEBD7, #4D301B);
+    --background: light-dark(#f5ede2, #1b1815);
     --text: light-dark(#000000, #FFFFFF);
 
     background-color: var(--background);
@@ -9,24 +9,24 @@
 }
 
 main {
-    font-family: "Times New Roman", Arial;
+    font-family: "EB Garamond", "Times New Roman", Arial, serif;
+    font-size: 20px;
 
-    max-width: 800px;
+    max-width: 700px;
     margin: auto;
 
     p {
         text-align: justify;
-
-        &:not(:is(:header, hr) + p) {
-            text-indent: 0.5em;
-        }
+        line-height: 1.3em;
+        margin-block: 0.1em;
 
         + p {
-            padding-block-start: 0;
+            text-indent: 0.75em;
         }
     }
 
     hr {
+        border: none;
     }
 }
 
