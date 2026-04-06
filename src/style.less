@@ -1,3 +1,33 @@
 :root {
-    --hello: world;
+    color-scheme: light dark;
+    
+    --background: light-dark(#FAEBD7, #4D301B);
+    --text: light-dark(#000000, #FFFFFF);
+
+    background-color: var(--background);
+    color: var(--text);
 }
+
+main {
+    font-family: "Times New Roman", Arial;
+
+    max-width: 800px;
+    margin: auto;
+
+    p {
+        text-align: justify;
+
+        &:not(:is(:header, hr) + p) {
+            text-indent: 0.5em;
+        }
+
+        + p {
+            padding-block-start: 0;
+        }
+    }
+
+    hr {
+    }
+}
+
+// https://garethsouthwell.substack.com/p/formatting-your-book-paragraphs-and
