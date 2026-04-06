@@ -13,7 +13,7 @@ const viteConfig = defineConfig({
         sourcemap: true,
         rollupOptions: {
             input: [
-                ...glob.sync("src/**/*.html")
+                ...await glob("./src/**/*.html")
             ]
         }
     },
