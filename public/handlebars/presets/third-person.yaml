@@ -1,0 +1,7 @@
+$schema: "https://chiptumor.github.io/ynfic/handlebars/replacement.schema.json"
+they: subject
+them: object
+their: possessAdj
+theirs: possessPro
+themself: reflexive
+themselves: reflexive
