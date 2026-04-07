@@ -4,11 +4,11 @@ import { glob } from "glob";
 import plugins from "./build/plugins.js";
 
 const viteConfig = defineConfig({
+    base: "/ynfic/",
     preview: {
         port: 6767
     },
     build: {
-        outDir: "./dist/ynfic/",
         emptyOutDir: true,
         assetsInlineLimit: 0,
         sourcemap: true,
