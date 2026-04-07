@@ -8,6 +8,7 @@ const viteConfig = defineConfig({
         port: 6767
     },
     build: {
+        outDir: "./dist/ynfic/",
         emptyOutDir: true,
         assetsInlineLimit: 0,
         sourcemap: true,
@@ -15,7 +16,7 @@ const viteConfig = defineConfig({
             input: [
                 ...await glob("./src/**/*.html")
             ]
-        }
+        },
     },
     css: {
         devSourcemap: true
